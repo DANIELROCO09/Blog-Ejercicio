@@ -3,11 +3,6 @@
 Un blog simple desarrollado como parte del bootcamp de Generation.
 Permite crear y visualizar publicaciones de forma dinámica en el navegador.
 
----
-
-## 🚀 Demo
-
-> (Agrega aquí el link si lo subes a GitHub Pages o similar)
 
 ---
 
