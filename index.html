@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog Personal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body { background-color: #f8f9fa; }
+        .post-card { transition: transform 0.2s; }
+        .post-card:hover { transform: translateY(-5px); }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark mb-4">
+    <div class="container">
+        <span class="navbar-brand mb-0 h1">DevBlog</span>
+         <div class="btn-group" role="group" aria-label="Options">
+            <a href="index.html" class="btn btn-outline-primary active">Inicio</a>
+            <a href="about.html" class="btn btn-outline-primary">About</a>
+            <a href="contact.html" class="btn btn-outline-primary">Contact</a>
+        </div>
+    </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Nueva Entrada</h5>
+                    <form id="blogForm">
+                        <div class="mb-3">
+                            <label class="form-label">Título</label>
+                            <input type="text" id="postTitle" class="form-control" placeholder="¿Sobre qué escribimos hoy?" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Contenido</label>
+                            <textarea id="postContent" class="form-control" rows="4" placeholder="Escribe tu idea..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Publicar Post</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-8">
+            <h3 class="mb-3">Publicaciones Recientes</h3>
+            <div id="postsContainer" class="row g-3">
+                </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
